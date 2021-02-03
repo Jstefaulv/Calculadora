@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge,chrome=1">
+	
+	
+	<link rel="stylesheet" type="text/css" href="estilos.css"> 
+	<title>Calculadora</title>
+</head>
+<body>
+<div class="contenido">
+	<div class="contenido-calc">
+
+		<div class="pantalla"> 
+			<!-- contenedor padre: class Pantalla-->
+			<input type="text" id="resultado" placeholder="0" disabled>
+			<!-- elemento hijo: input-->
+		</div>
+
+		<div class="btn btn-calc">
+			<input type="button" value="7" onclick="obtenerDatos(this)">
+		</div>
+		<div class="btn btn-calc">
+			<input type="button" value="8" onclick="obtenerDatos(this)">
+		</div>
+		<div class="btn btn-calc">
+			<input type="button" value="9" onclick="obtenerDatos(this)">
+		</div>
+		<div class="btn btn-calc">
+			<input type="button" value="+" onclick="obtenerDatos(this)">
+		</div>
+		<div class="btn btn-calc">
+			<input type="button" value="4" onclick="obtenerDatos(this)">
+		</div>
+		<div class="btn btn-calc">
+			<input type="button" value="5" onclick="obtenerDatos(this)">
+		</div>
+		<div class="btn btn-calc">
+			<input type="button" value="6" onclick="obtenerDatos(this)">
+		</div>
+		<div class="btn btn-calc">
+			<input type="button" value="-" onclick="obtenerDatos(this)">
+		</div>
+		<div class="btn btn-calc">
+			<input type="button" value="1" onclick="obtenerDatos(this)">
+		</div>
+		<div class="btn btn-calc">
+			<input type="button" value="2" onclick="obtenerDatos(this)">
+		</div>
+		<div class="btn btn-calc">
+			<input type="button" value="3" onclick="obtenerDatos(this)">
+		</div>
+		<div class="btn btn-calc">
+			<input type="button" value="*" onclick="obtenerDatos(this)">
+		</div>
+		<div class="btn btn-calc">
+			<input type="button" value="0" onclick="obtenerDatos(this)">
+		</div>
+		<div class="btn btn-calc">
+			<input type="button" value="/" onclick="obtenerDatos(this)">
+		</div>
+
+		<div class="btn btn-calc btn-limpiar">
+			<input type="button" value="C" onclick="limpiar()" class="limpiar">
+		</div>
+		<div class="btn btn-calc btn-igual">
+			<input type="button" value="=" onclick="calcular()" class="igual">
+		</div>
+	</div>	
+</div>
+
+
+
+<script type="text/javascript" src="calculadora.js"></script>
+</body>
+</html>
